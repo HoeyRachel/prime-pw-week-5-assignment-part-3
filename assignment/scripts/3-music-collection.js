@@ -51,13 +51,13 @@ console.log (collection);
 
 // [x]Add a function named `showCollection`. This function should:
 
-function showCollection (sound){
+// function showCollection (sound){
     
-    for (i=0; i<sound.length; i++){
-        console.log (sound[i]);
-    }
-}
- console.log (showCollection (collection));
+//     for (i=0; i<sound.length; i++){
+//         console.log (sound[i]);
+//     }
+// }
+//  console.log (showCollection (collection));
 //   [ x] Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
 //   [ x] Console.log the number of items in the array.
 //   [x ] Loop over the array and console.log each album's information formatted 
@@ -66,23 +66,29 @@ function showCollection (sound){
 // [ x] Test the `showCollection` function.
 
 // [x ] Add a function named `findByArtist`. This function should:
-//   [] Take in `artist` (a string) parameter
+//  [x] Take in `artist` (a string) parameter
 
 
 
 
-// function findByArtist(artist) {
-//     let results = [];
-//     for (let i=0; i<collection.length; i++){
-//         results.push (collection[i]);   
-//     } if collection[i]===a{
-//     return results;
-// } //end if
-// } //end findByArtist
-// console.log (findByArtist(collection));
+function findByArtist(artist) {
+    let results = [];
+    for (let i=0; i<collection.length; i++){
+    if (collection[i].artist === artist) { 
+       results.push (collection[i]);       
+    }//end if
+}  //end for
+    return results;
+   
+
+} //end findByArtist
+
+console.log (findByArtist('fireman'));
+
+
 //   [x] Create an array to hold any results, empty to start
 //   [x] Loop through the `collection` 
-//   [ ] add any objects with a matching artist to the array.
+//   [x] add any objects with a matching artist to the array.
 //   [x] Return the array with the matching results. 
 //   [ ] If no results are found, return an empty array.
 
