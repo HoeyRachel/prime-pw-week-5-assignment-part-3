@@ -51,13 +51,13 @@ console.log (collection);
 
 // [x]Add a function named `showCollection`. This function should:
 
-// function showCollection (sound){
+function showCollection (sound){
     
-//     for (i=0; i<sound.length; i++){
-//         console.log (sound[i]);
-//     }
-// }
-//  console.log (showCollection (collection));
+    for (i=0; i<sound.length; i++){
+        console.log (sound[i]);
+    }
+}
+showCollection(collection);
 //   [ x] Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
 //   [ x] Console.log the number of items in the array.
 //   [x ] Loop over the array and console.log each album's information formatted 
@@ -74,7 +74,7 @@ console.log (collection);
 function findByArtist(artist) {
     let results = [];
     for (let i=0; i<collection.length; i++){
-    if (collection[i].artist === artist) { 
+    if (artist === collection[i].artist) { 
        results.push (collection[i]);       
     }//end if
 }  //end for
@@ -90,9 +90,9 @@ console.log (findByArtist('fireman'));
 //   [x] Loop through the `collection` 
 //   [x] add any objects with a matching artist to the array.
 //   [x] Return the array with the matching results. 
-//   [ ] If no results are found, return an empty array.
+//   [X ] If no results are found, return an empty array.
 
-// [ ] Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. Check that for artists with multiple matches, all are found.
+// [ X] Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. Check that for artists with multiple matches, all are found.
 
 // > When testing your functions, write all tests in the JavaScript file!
 
